@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
     <application
@@ -21,6 +21,27 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.philanthrofeed.Login2Activity"
+            android:label="@string/title_activity_login2"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.example.philanthrofeed.ReceipientListActivity"
+            android:label="@string/title_receipient_list"
+            android:parentActivityName="com.example.philanthrofeed.Login2Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.philanthrofeed.Login2Activity" />
+        </activity>
+        <activity
+            android:name="com.example.philanthrofeed.ReceipientDetailActivity"
+            android:label="@string/title_receipient_detail"
+            android:parentActivityName=".ReceipientListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ReceipientListActivity" />
         </activity>
     </application>
 
