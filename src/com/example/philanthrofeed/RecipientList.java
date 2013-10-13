@@ -25,16 +25,16 @@ public class RecipientList {
 	static {
 		// Add items.
 		addItem(new Recipient("1", "Keith", "Washington, DC", "blank_male",
-				"Keith especially enjoys Chipotle. Information about Keith. Information about Keith. Information about Keith. Information about Keith. Information about Keith."));
+				"Balance: $5.00 \n\nKeith especially enjoys chicken burritos at Chipotle. He's lived in DC for the last two and a half years. He is usually around M Street in Georgetown and is well known for wearing his vineyard vine whale hat", 5.00));
 		
 		addItem(new Recipient("2", "Janet", "Washington, DC", "blank_female",
-				"Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew."));
+				"Balance: $6.00 \n\nJanet just signed up for PhilanthroFeed and has already started eating much better.", 6.00));
 		
 		addItem(new Recipient("3", "Welles", "Washington, DC", "blank_male",
-				"Information about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. "));
+				"Balance: $75.50 \n\nInformation about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. ", 75.50));
 		
-		addItem(new Recipient("4", "Whale Hat", "Washington, DC", "blank_male",
-				"Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. "));
+		addItem(new Recipient("4", "Evan", "Washington, DC", "blank_male",
+				"Balance: $2.50 \n\nEvan's favorite restaurant is McDonalds. He is really grateful for the one meal a day he usually gets through PhilanthroFeed.", 2.50));
 	}
 
 	private static void addItem(Recipient recipient) {
@@ -48,13 +48,15 @@ public class RecipientList {
 		public String name;
 		public String location;
 		public String description;
+		public Double balance;
 		public String imgFileLoc;
 
-		public Recipient(String in_id, String in_name, String in_location, String in_imgFileLoc, String in_description) {
+		public Recipient(String in_id, String in_name, String in_location, String in_imgFileLoc, String in_description, Double balance) {
 			id = in_id;
 			name = in_name;
 			location = in_location;
 			description = in_description;
+			this.balance = balance;
 			imgFileLoc = in_imgFileLoc;
 		}
 
