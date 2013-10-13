@@ -15,7 +15,8 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_toRightOf="@id/recipientImage"
-         android:layout_marginLeft="34dp" />
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp" />
 
      <TextView
          android:id="@+id/recipientLocation"
@@ -23,7 +24,8 @@
          android:layout_height="wrap_content"
          android:layout_toRightOf="@id/recipientImage"
          android:layout_below="@id/recipientName"
-         android:layout_marginTop="47dp" />
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp" />
          
       <TextView
          android:id="@+id/recipientDescription"
@@ -31,6 +33,7 @@
          android:layout_height="wrap_content"
          android:layout_toRightOf="@id/recipientImage"
          android:layout_below="@id/recipientLocation"
-         android:layout_marginTop="47dp" />
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp" />
     
 </RelativeLayout>

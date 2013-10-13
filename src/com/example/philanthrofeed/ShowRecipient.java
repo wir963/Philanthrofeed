@@ -32,8 +32,8 @@ public class ShowRecipient extends Activity {
 			Context context = getApplicationContext();
 			int imageId = context.getResources().getIdentifier(mItem.imgFileLoc, "drawable", context.getPackageName());
 			imageView.setImageResource(imageId);
-			imageView.getLayoutParams().height = 175;
-			imageView.getLayoutParams().width = 132;
+			imageView.getLayoutParams().height = 350;
+			imageView.getLayoutParams().width = 264;
 
 		}
 		
