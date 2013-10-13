@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
@@ -17,6 +18,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Recipient_Selection extends Activity {
@@ -120,6 +122,22 @@ public class Recipient_Selection extends Activity {
 			{
 				outputView = (RelativeLayout)convertView; //otherwise recreate the previous view
 			}
+			
+			outputView.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					TextView getNameView = (TextView) v.findViewById(R.id.recipientListItemName);
+					String getName = getNameView.getText().toString();
+					
+					Toast nameToast = Toast.makeText(getApplicationContext(), getName, Toast.LENGTH_LONG);
+					nameToast.show();
+					
+				}
+				
+				
+			});
 			
 			return outputView; //return the new composite view
 		}
