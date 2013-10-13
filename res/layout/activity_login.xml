@@ -11,6 +11,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/welcome_message"
+        android:id="@+id/welcome_text" />
+        
+    
+    <EditText 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_message"
+        android:id="@+id/user_edit_text" 
+        android:layout_below="@id/welcome_text" />"
+    
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/password_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_edit_text"
+        android:hint="@string/password_message" />
+    
+    <Button
+        android:layout_below="@id/password_edit_text"
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button_message" />"
 
 </RelativeLayout>

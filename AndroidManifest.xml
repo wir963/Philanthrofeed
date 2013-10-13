@@ -43,6 +43,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ReceipientListActivity" />
         </activity>
+        <activity
+            android:name="com.example.philanthrofeed.Recipient_Selection"
+            android:label="@string/title_activity_recipient__selection" >
+        </activity>
     </application>
 
 </manifest>

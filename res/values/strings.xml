@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">PhilanthroFeed</string>
+    <string name="app_name">philanthroFeed</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_receipient_list">Recipients</string>
-    <string name="title_receipient_detail">Receipient Detail</string>
+    <string name="title_receipient_detail">Recipient Detail</string>
+    <string name="welcome_message">Welcome to philanthroFeed!\nLogin or Register using PayPal</string>
+    <string name="username_message">Username</string>
+    <string name="password_message">Password</string>
+    <string name="login_button_message">Submit</string>
+    <string name="title_activity_recipient__selection">Recipient_Selection</string>
 
 </resources>
