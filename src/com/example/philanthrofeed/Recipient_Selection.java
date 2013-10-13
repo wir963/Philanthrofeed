@@ -6,6 +6,7 @@ import java.util.List;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -127,9 +128,13 @@ public class Recipient_Selection extends Activity {
 
 				@Override
 				public void onClick(View v) {
-					// TODO Auto-generated method stub
 					TextView getNameView = (TextView) v.findViewById(R.id.recipientListItemName);
 					String getName = getNameView.getText().toString();
+					
+					//TODO: Write a new detail activity to replace ReceipientDetailActivity??
+					Intent detailIntent = new Intent(getApplicationContext(), ReceipientDetailActivity.class);
+					detailIntent.putExtra(ReceipientDetailFragment.ARG_ITEM_ID, getName);
+					startActivity(detailIntent);
 					
 					Toast nameToast = Toast.makeText(getApplicationContext(), getName, Toast.LENGTH_LONG);
 					nameToast.show();
