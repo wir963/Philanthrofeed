@@ -11,15 +11,16 @@
 
     <ImageView
         android:contentDescription="@string/philogo_desc"
-        android:id="@+id/imageView1"
+        android:id="@+id/miniLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
         android:src="@drawable/philogo_mini" />
     
     <ListView
         android:id="@+id/recipient_list"
+        android:layout_below="@id/miniLogo"
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"
         />

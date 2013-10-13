@@ -6,29 +6,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ShowRecipient" >
+    tools:context=".ShowRecipient" 
+    android:background="@drawable/login_page_blank_resize">
 
-    
-
-     <TextView
-         android:id="@+id/recipientName"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignTop="@+id/recipientImage"
-         android:layout_marginLeft="34dp"
-         android:layout_toRightOf="@+id/recipientImage" />
-
-     <TextView
-         android:id="@+id/recipientLocation"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/recipientName"
-         android:layout_marginTop="47dp"
-         android:layout_toLeftOf="@+id/recipientName" />
-     
-     <ImageView
-        android:id="@+id/recipientImage"
+	 <ImageView
+        android:contentDescription="@string/philogo_desc"
+        android:id="@+id/miniLogo"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/philogo_mini" />
+	
+	 <!-- Box that includes photo, name, location, and description -->
+    <include 
+        android:id="@+id/cell1" 
+        layout="@layout/show_rec_box1" 
+        android:layout_below="@id/miniLogo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    
+    <!-- Donate message -->
+    <TextView
+        android:id="@+id/donate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cell1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/donate_message" />
+    
+ <EditText
+        android:id="@+id/payment_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donate_text"
+        android:layout_centerHorizontal="true"
+        android:ems="11"
+        android:hint="@string/donation_hint_message"
+        android:background="@drawable/round_white_edit_text"
+        android:layout_marginBottom="8dp" >
+	 <requestFocus />
+    </EditText>
+    
+    <!-- PAYPAL BUTTON!! -->
 
 </RelativeLayout>

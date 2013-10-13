@@ -24,10 +24,21 @@ public class RecipientList {
 
 	static {
 		// Add items.
-		addItem(new Recipient("1", "Keith", "Washington, DC", "ic_launcher"));
-		addItem(new Recipient("2", "Andrew", "Washington, DC", "ic_launcher"));
-		addItem(new Recipient("3", "Welles", "Washington, DC", "ic_launcher"));
-		addItem(new Recipient("4", "Whale Hat", "Washington, DC", "ic_launcher"));
+		addItem(new Recipient("1", "Keith", "Washington, DC", "blank_male",
+				"Information about Keith. Information about Keith. Information about Keith. Information about Keith. Information about Keith. Information about Keith."
+				+ "Information about Keith. Information about Keith. Information about Keith. Information about Keith. Information about Keith. Information about Keith."));
+		
+		addItem(new Recipient("2", "Janet", "Washington, DC", "blank_female",
+				"Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew."
+				+ "Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew. Information about Andrew."));
+		
+		addItem(new Recipient("3", "Welles", "Washington, DC", "blank_male",
+				"Information about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. "
+				+ "Information about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. "));
+		
+		addItem(new Recipient("4", "Whale Hat", "Washington, DC", "blank_male",
+				"Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. "
+				+ "Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. Information about Whale Hat. "));
 	}
 
 	private static void addItem(Recipient recipient) {
@@ -40,12 +51,14 @@ public class RecipientList {
 		public String id;
 		public String name;
 		public String location;
+		public String description;
 		public String imgFileLoc;
 
-		public Recipient(String in_id, String in_name, String in_location, String in_imgFileLoc) {
+		public Recipient(String in_id, String in_name, String in_location, String in_imgFileLoc, String in_description) {
 			id = in_id;
 			name = in_name;
 			location = in_location;
+			description = in_description;
 			imgFileLoc = in_imgFileLoc;
 		}
 

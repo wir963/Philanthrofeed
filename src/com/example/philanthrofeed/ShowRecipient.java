@@ -14,9 +14,10 @@ public class ShowRecipient extends Activity {
 		super.onCreate(savedInstanceState);
 		String s = getIntent().getExtras().getString("key");
 		setContentView(R.layout.activity_show_recipient);
+		ImageView imageView = (ImageView)findViewById(R.id.recipientImage);
 		TextView nameView = (TextView)findViewById(R.id.recipientName);
 		TextView locationView = (TextView)findViewById(R.id.recipientLocation);
-		ImageView imageView = (ImageView)findViewById(R.id.recipientImage);
+		TextView descView = (TextView)findViewById(R.id.recipientDescription);
 
 		RecipientList.Recipient mItem;
 
@@ -27,9 +28,13 @@ public class ShowRecipient extends Activity {
 			mItem = RecipientList.ITEM_MAP.get(s);
 			nameView.setText(mItem.name);
 			locationView.setText(mItem.location);
+			descView.setText(mItem.description);
 			Context context = getApplicationContext();
 			int imageId = context.getResources().getIdentifier(mItem.imgFileLoc, "drawable", context.getPackageName());
 			imageView.setImageResource(imageId);
+			imageView.getLayoutParams().height = 175;
+			imageView.getLayoutParams().width = 132;
+
 		}
 		
 	}

@@ -13,5 +13,7 @@
     <string name="title_activity_recipient__selection">Recipient_Selection</string>
     <string name="philogo_desc">philanthroFeed Logo</string>
     <string name="title_activity_show_recipient">ShowRecipient</string>
+    <string name="donate_message">Enter the amount you would like to donate</string>
+    <string name="donation_hint_message">$</string>
 
 </resources>
