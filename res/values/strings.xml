@@ -6,10 +6,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_receipient_list">Recipients</string>
     <string name="title_receipient_detail">Recipient Detail</string>
-    <string name="welcome_message">Welcome to philanthroFeed!\nLogin or Register using PayPal</string>
-    <string name="username_message">Username</string>
+    <string name="welcome_message">Please enter your PayPal information</string>
+    <string name="username_message">E-mail</string>
     <string name="password_message">Password</string>
-    <string name="login_button_message">Submit</string>
+    <string name="login_button_message">Login</string>
     <string name="title_activity_recipient__selection">Recipient_Selection</string>
+    <string name="philogo_desc">philanthroFeed Logo</string>
 
 </resources>
