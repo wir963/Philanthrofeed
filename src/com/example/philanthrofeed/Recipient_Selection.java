@@ -101,8 +101,8 @@ public class Recipient_Selection extends Activity {
 
 				//set the imageView to the image as specified in the ArrayList menuList
 				ImageView menuItemLogo = (ImageView)outputView.findViewById(R.id.recipientListItemImage);
-				menuItemLogo.getLayoutParams().width = 60;
-				menuItemLogo.getLayoutParams().height = 80;
+				menuItemLogo.getLayoutParams().width = 120;
+				menuItemLogo.getLayoutParams().height = 160;
 				int resourceImageId = getResources().getIdentifier(listItems.get(index).imgFileLoc, "drawable", getPackageName()); //get the int of the identifier of the image
 
 				if(resourceImageId != 0) //basic handling for if the image is not found
