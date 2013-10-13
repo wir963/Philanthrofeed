@@ -138,7 +138,7 @@ public class ShowRecipient extends Activity {
 	        }
 	    }
 	    else if (resultCode == Activity.RESULT_CANCELED) {
-	        Log.i("paymentExample", "The user canceled.");
+	        Log.i("paymentExample", "The user cancelled.");
 	    }
 	    else if (resultCode == PaymentActivity.RESULT_PAYMENT_INVALID) {
 	        Log.i("paymentExample", "An invalid payment was submitted. Please see the docs.");

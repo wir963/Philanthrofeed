@@ -16,5 +16,8 @@
     <string name="title_activity_show_recipient">ShowRecipient</string>
     <string name="donate_message">Enter the amount you would like to donate</string>
     <string name="donation_hint_message">$</string>
+    <string name="donate_text">Donate Now!</string>
+    
+    
 
 </resources>
