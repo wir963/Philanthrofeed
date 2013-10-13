@@ -11,5 +11,6 @@
     <string name="password_message">Password</string>
     <string name="login_button_message">Submit</string>
     <string name="title_activity_recipient__selection">Recipient_Selection</string>
+    <string name="title_activity_show_recipient">ShowRecipient</string>
 
 </resources>

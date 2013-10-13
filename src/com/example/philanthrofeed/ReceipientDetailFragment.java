@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.philanthrofeed.dummy.DummyContent;
-
 /**
  * A fragment representing a single Receipient detail screen. This fragment is
  * either contained in a {@link ReceipientListActivity} in two-pane mode (on
@@ -24,7 +22,7 @@ public class ReceipientDetailFragment extends Fragment {
 	/**
 	 * The dummy content this fragment is presenting.
 	 */
-	private DummyContent.DummyItem mItem;
+	private RecipientList.Recipient mItem;
 
 	/**
 	 * Mandatory empty constructor for the fragment manager to instantiate the
@@ -41,7 +39,7 @@ public class ReceipientDetailFragment extends Fragment {
 			// Load the dummy content specified by the fragment
 			// arguments. In a real-world scenario, use a Loader
 			// to load content from a content provider.
-			mItem = DummyContent.ITEM_MAP.get(getArguments().getString(
+			mItem = RecipientList.ITEM_MAP.get(getArguments().getString(
 					ARG_ITEM_ID));
 		}
 	}
@@ -55,7 +53,7 @@ public class ReceipientDetailFragment extends Fragment {
 		// Show the dummy content as text in a TextView.
 		if (mItem != null) {
 			((TextView) rootView.findViewById(R.id.receipient_detail))
-					.setText(mItem.content);
+					.setText(mItem.id);
 		}
 
 		return rootView;
