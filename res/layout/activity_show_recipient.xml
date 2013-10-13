@@ -52,13 +52,18 @@
     </EditText>
     
     <!-- PAYPAL BUTTON!! -->
-    <Button 
+    
+    <Button
+        android:id="@+id/donate_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/donate_button"
-        android:text="Donate Now!"
+        android:layout_below="@+id/payment_edit_text"
         android:layout_centerHorizontal="true"
-        android:ems="11"
-        android:layout_below="@id/payment_edit_text"/>
+        android:text="@string/donate_text" 
+        android:gravity="center"
+        android:background="@drawable/round_butt"
+        android:minWidth="119dp"
+        android:minHeight="28dp"/>
+
 
 </RelativeLayout>
