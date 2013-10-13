@@ -12,5 +12,6 @@
     <string name="login_button_message">Login</string>
     <string name="title_activity_recipient__selection">Recipient_Selection</string>
     <string name="philogo_desc">philanthroFeed Logo</string>
+    <string name="title_activity_show_recipient">ShowRecipient</string>
 
 </resources>
