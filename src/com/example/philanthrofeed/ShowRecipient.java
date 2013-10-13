@@ -15,6 +15,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -25,6 +27,12 @@ public class ShowRecipient extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		//Remove title bar
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+		//Remove notification bar
+		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+				
 		super.onCreate(savedInstanceState);
 		
 		
@@ -58,8 +66,8 @@ public class ShowRecipient extends Activity {
 			Context context = getApplicationContext();
 			int imageId = context.getResources().getIdentifier(mItem.imgFileLoc, "drawable", context.getPackageName());
 			imageView.setImageResource(imageId);
-			imageView.getLayoutParams().height = 175;
-			imageView.getLayoutParams().width = 132;
+			imageView.getLayoutParams().height = 350;
+			imageView.getLayoutParams().width = 264;
 
 		}
 		
@@ -136,8 +144,10 @@ public class ShowRecipient extends Activity {
 	        Log.i("paymentExample", "An invalid payment was submitted. Please see the docs.");
 	    }
 	    
-	    Intent moveToMenuSelection = new Intent(getApplicationContext(), Recipient_Selection.class); //will launch the menuSelection application
-		startActivity(moveToMenuSelection);
+	    
+		Intent intent = new Intent(getApplicationContext(), DonateThanks.class); //will launch the menuSelection application
+		startActivity(intent);
+		
 	}
 	
 }

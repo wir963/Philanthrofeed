@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:src="@drawable/philogo_mini" />
+        android:src="@drawable/philogo_mini"
+        android:layout_marginBottom="10dp" />
 	
 	 <!-- Box that includes photo, name, location, and description -->
     <include 
@@ -34,7 +35,7 @@
         android:layout_below="@id/cell1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:text="@string/donate_message" />
     
  <EditText
@@ -43,10 +44,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/donate_text"
         android:layout_centerHorizontal="true"
-        android:ems="11"
+        android:ems="7"
         android:hint="@string/donation_hint_message"
         android:background="@drawable/round_white_edit_text"
-        android:layout_marginBottom="8dp" >
+        android:layout_marginBottom="10dp" >
 	 <requestFocus />
     </EditText>
     

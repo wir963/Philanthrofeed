@@ -1,49 +1,48 @@
 package com.example.philanthrofeed;
 
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
-public class DonateActivity extends Activity {
+public class DonateThanks extends Activity {
 
-	/*@Override
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		//Remove title bar
+				this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+				//Remove notification bar
+				this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_login);
+		setContentView(R.layout.activity_donate_thanks);
 		
-		Button donateButton = (Button) findViewById(R.id.login_button);
+		Button button = (Button) findViewById(R.id.menu_selection_button);
 		
-		donateButton.setOnClickListener(new OnClickListener(){
+		button.setOnClickListener(new OnClickListener(){
 			
 			@Override
 			public void onClick(View arg0) {
 		        Intent loginIntent = new Intent();
 				
-				EditText username_text = (EditText) findViewById(R.id.user_edit_text);
-				EditText password_text = (EditText) findViewById(R.id.password_edit_text);
-				
-				String username = username_text.getText().toString();
-				String password = password_text.getText().toString();
-				
-				//Toast newToast = Toast.makeText(getApplicationContext(), username + password, Toast.LENGTH_LONG);
-				//newToast.show();
     			Intent moveToMenuSelection = new Intent(getApplicationContext(), Recipient_Selection.class); //will launch the menuSelection application
     			startActivity(moveToMenuSelection);
-			}});
+			}
+		});
 	}
-	
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.login, menu);
+		getMenuInflater().inflate(R.menu.donate_thanks, menu);
 		return true;
-	}*/
+	}
 
 }
