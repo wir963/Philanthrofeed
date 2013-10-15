@@ -24,17 +24,18 @@ public class RecipientList {
 
 	static {
 		// Add items.
-		addItem(new Recipient("1", "Keith", "Washington, DC", "blank_male",
-				"Balance: $5.00 \n\nKeith especially enjoys chicken burritos at Chipotle. He's lived in DC for the last two and a half years. He is usually around M Street in Georgetown and is well known for wearing his vineyard vine whale hat", 5.00));
+		addItem(new Recipient("1", "Mark", "Federal Triangle, Washington, DC", "mark",
+				"Balance: $5.00 \n\nMark just lost his job five months ago for reasons beyond his control. Also, because he recently hurt his back, he's having trouble finding work. In the meantime,"
+				+ " he really appreciates any donations for food to keep his spirits high.", 5.00));
 		
-		addItem(new Recipient("2", "Janet", "Washington, DC", "blank_female",
-				"Balance: $6.00 \n\nJanet just signed up for PhilanthroFeed and has already started eating much better.", 6.00));
+		addItem(new Recipient("2", "Kristen", "Washington, DC", "kristen",
+				"Balance: $6.00 \n\nKristen just signed up for PhilanthroFeed and has already started eating much better.", 6.00));
 		
-		addItem(new Recipient("3", "Welles", "Washington, DC", "blank_male",
-				"Balance: $75.50 \n\nInformation about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. Information about Welles. ", 75.50));
+		addItem(new Recipient("3", "Welles", "Georgetown, Washington, DC", "welles",
+				"Balance: $75.50 \n\nHis favorite restaurant is Morton's, and he sleeps on Couches. ", 75.50));
 		
-		addItem(new Recipient("4", "Evan", "Washington, DC", "blank_male",
-				"Balance: $2.50 \n\nEvan's favorite restaurant is McDonalds. He is really grateful for the one meal a day he usually gets through PhilanthroFeed.", 2.50));
+		addItem(new Recipient("4", "Andrew", "Washington, DC", "andrew",
+				"Balance: $2.50 \n\nAndrew's favorite restaurant is McDonalds. He is really grateful for the one meal a day he usually gets through philanthroFeed.", 2.50));
 	}
 
 	private static void addItem(Recipient recipient) {

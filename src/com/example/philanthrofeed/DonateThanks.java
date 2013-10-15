@@ -9,7 +9,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 
 public class DonateThanks extends Activity {
 
@@ -30,7 +29,6 @@ public class DonateThanks extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-		        Intent loginIntent = new Intent();
 				
     			Intent moveToMenuSelection = new Intent(getApplicationContext(), Recipient_Selection.class); //will launch the menuSelection application
     			startActivity(moveToMenuSelection);

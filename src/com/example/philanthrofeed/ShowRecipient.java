@@ -67,7 +67,7 @@ public class ShowRecipient extends Activity {
 			int imageId = context.getResources().getIdentifier(mItem.imgFileLoc, "drawable", context.getPackageName());
 			imageView.setImageResource(imageId);
 			imageView.getLayoutParams().height = 350;
-			imageView.getLayoutParams().width = 264;
+			imageView.getLayoutParams().width = 263;
 
 		}
 		
@@ -97,7 +97,7 @@ public class ShowRecipient extends Activity {
 	
 	
 	public void onBuyPressed(View pressed) {
-	    PayPalPayment payment = new PayPalPayment(new BigDecimal("0.75"), "USD", "Donate Food to Charity");
+	    PayPalPayment payment = new PayPalPayment(new BigDecimal("3.00"), "USD", "Donate Food to Charity");
 
 	    Intent intent = new Intent(this, PaymentActivity.class);
 
